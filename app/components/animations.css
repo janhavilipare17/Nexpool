@@ -1,0 +1,119 @@
+/* Hover effects for cards */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: #00897B !important;
+}
+
+/* Button press effect */
+.btn-press {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+.btn-press:hover {
+  opacity: 0.9;
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.fade-in-1 { animation-delay: 0.05s; opacity: 0; }
+.fade-in-2 { animation-delay: 0.1s;  opacity: 0; }
+.fade-in-3 { animation-delay: 0.15s; opacity: 0; }
+.fade-in-4 { animation-delay: 0.2s;  opacity: 0; }
+.fade-in-5 { animation-delay: 0.25s; opacity: 0; }
+.fade-in-6 { animation-delay: 0.3s;  opacity: 0; }
+
+/* Sidebar nav hover */
+.nav-hover {
+  transition: background 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
+}
+.nav-hover:hover {
+  background: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.9) !important;
+  padding-left: 18px !important;
+}
+
+/* Progress bar animation */
+@keyframes growWidth {
+  from { width: 0%; }
+  to   { width: var(--target-width); }
+}
+.progress-animate {
+  animation: growWidth 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.3s;
+  width: 0%;
+}
+
+/* Input focus glow */
+.input-focus {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.input-focus:focus {
+  border-color: #00897B !important;
+  box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.12);
+}
+
+/* Stat card number pop */
+@keyframes countUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+.stat-pop {
+  animation: countUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Pill badge pulse for pending */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Page transition */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.page-enter {
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* Tooltip */
+.tooltip-wrap { position: relative; }
+.tooltip-wrap .tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0B1215;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 10;
+  font-weight: 500;
+}
+.tooltip-wrap:hover .tooltip { display: block; }
