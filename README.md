@@ -100,16 +100,7 @@ Refer to the [Next.js deployment documentation](https://nextjs.org/docs/app/buil
 
 ---
 
-## Environment Variables
 
-Create a `.env.local` file in the root of the project and add the following:
-
-```env
-NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_test_Spjtege8D88kns
-RAZORPAY_KEY_SECRET=SD1TuWIPrnj37DyXmT3WEme8
-```
-
----
 
 ## Contributing
 
