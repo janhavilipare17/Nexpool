@@ -93,7 +93,7 @@ if (user) {
         padding: '48px',
       }}>
         <div style={{ color: '#fff', fontSize: '24px', fontWeight: '700' }}>
-          Hostel<span style={{ color: '#00897B' }}>Pool</span>
+          Nex<span style={{ color: '#00897B' }}>Pool</span>
         </div>
 
         <div>
@@ -153,7 +153,7 @@ if (user) {
             {mode === 'login' ? 'Welcome back' : 'Create your account'}
           </div>
           <div style={{ fontSize: '14px', color: '#7A8F97', marginBottom: '24px' }}>
-            {mode === 'login' ? 'Log in to manage your hostel pools.' : 'Join HostelPool and manage shared expenses easily.'}
+            {mode === 'login' ? 'Log in to manage your hostel pools.' : 'Join NexPool and manage shared expenses easily.'}
           </div>
 
           {error && (
